@@ -7,7 +7,7 @@ What this tool can do:
 
 	- download most recent lenny text file that acts as database for the lennys
 	- view the lennys in UTF-8
-	- copy te shown lenny to your clipboard by clicking the button next to it
+	- copy the shown lenny to your clipboard by clicking the button next to it
 	- the text boxes are manually editable
 		- feature planned to manually add new ones with own lennys
 
