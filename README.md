@@ -1,7 +1,7 @@
 LennyTool
 
-Second Version of this little tool i made for fun.
-If you have feature requests/ questions or anything else message me.
+Second Version of this little tool I made for fun.
+If you have feature requests/ questions or something else related to this, feel free to message me.
 
 What this tool can do:
 
