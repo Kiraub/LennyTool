@@ -12,3 +12,6 @@ What this tool can do:
 		- feature planned to manually add new ones with own lennys
 
 Should you use the tool and think it is useful or not yet useful enough, I'd be glad to hear your feedback and ideas.
+
+
+PS: Do mind that the tool minimizes to the notification tray without showing up in the taskbar. You can switch to it using alt+tab though.
