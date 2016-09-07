@@ -1,0 +1,9 @@
+c:\users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\bin\Debug\LennyTool 2.exe.config
+c:\users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\bin\Debug\LennyTool 2.exe
+c:\users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\bin\Debug\LennyTool 2.pdb
+c:\users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Debug\LennyTool 2.csprojResolveAssemblyReference.cache
+c:\users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Debug\LennyTool_2.Main.resources
+c:\users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Debug\LennyTool_2.Properties.Resources.resources
+c:\users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Debug\LennyTool 2.csproj.GenerateResource.Cache
+c:\users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Debug\LennyTool 2.exe
+c:\users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Debug\LennyTool 2.pdb

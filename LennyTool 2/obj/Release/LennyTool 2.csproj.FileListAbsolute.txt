@@ -1,0 +1,8 @@
+C:\Users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\bin\Release\LennyTool 2.exe.config
+C:\Users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\bin\Release\LennyTool 2.exe
+C:\Users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\bin\Release\LennyTool 2.pdb
+C:\Users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Release\LennyTool_2.Main.resources
+C:\Users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Release\LennyTool_2.Properties.Resources.resources
+C:\Users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Release\LennyTool 2.csproj.GenerateResource.Cache
+C:\Users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Release\LennyTool 2.exe
+C:\Users\erik\documents\visual studio 2015\Projects\LennyTool 2\LennyTool 2\obj\Release\LennyTool 2.pdb
