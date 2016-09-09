@@ -33,6 +33,25 @@ namespace LennyTool_2
 
         private void Main_Load(object sender, EventArgs e)
         {
+            setLayout();
+
+            ntfyIcn_lennyTool.Visible = false;
+            this.ShowInTaskbar = true;
+
+            totalPageNumber.TextAlign = HorizontalAlignment.Left;
+            totalPageNumber.Text = "of --";
+            totalPageNumber.Font = new Font(this.Font, FontStyle.Bold);
+            pageNumber.TextAlign = HorizontalAlignment.Right;
+            pageNumber.Text = "--";
+            pageNumber.Font = new Font(this.Font, FontStyle.Bold);
+
+            operateFile('r', 'l');
+        }
+
+// Managing on-screen stuff
+
+        private void setLayout()
+        {
             this.MaximumSize = new System.Drawing.Size(600, 300);
             this.MinimumSize = new System.Drawing.Size(300, 300);
             this.Size = new System.Drawing.Size(300, 300);
@@ -72,7 +91,7 @@ namespace LennyTool_2
 
             pageNumber.Dock = DockStyle.Fill;
             totalPageNumber.Dock = DockStyle.Fill;
-            
+
             splitC_settings.Dock = DockStyle.None;
             splitC_settings.Enabled = false;
             splitC_settings.Visible = false;
@@ -82,28 +101,14 @@ namespace LennyTool_2
             splitC_main.SplitterDistance = 35;
             splitC_main.Visible = true;
             splitC_main.Enabled = true;
-
-            ntfyIcn_lennyTool.Visible = false;
-            this.ShowInTaskbar = true;
-
-            totalPageNumber.TextAlign = HorizontalAlignment.Left;
-            totalPageNumber.Text = "of --";
-            totalPageNumber.Font = new Font(this.Font, FontStyle.Bold);
-            pageNumber.TextAlign = HorizontalAlignment.Right;
-            pageNumber.Text = "--";
-            pageNumber.Font = new Font(this.Font, FontStyle.Bold);
-
-            operateFile('r', 'l');
         }
-
-// Managing on-screen lenny buttons
 
         private void generateButtons(char nr)
         {
             if( nr == 'n')
             {
                 // new generation of the buttons
-                totalPageCount = (int)Math.Ceiling((decimal)(lennyCount / lennyPerPage));
+                totalPageCount = (int)Math.Ceiling(((double)lennyCount / (double)lennyPerPage));
                 totalPageNumber.Text = "of " + totalPageCount.ToString();
                 pageNumber.Text = "1";
                 currentPage = 1;
@@ -129,6 +134,7 @@ namespace LennyTool_2
                     lennyButtons[cnt].MinimumSize = new Size(cnt, cnt);
 
                     lennyBoxes[cnt] = new TextBox();
+                    lennyBoxes[cnt].Font = new Font("Lucida Sans Unicode", lennyBoxes[cnt].Font.Size);
                     lennyBoxes[cnt].Text = lennyStrings[cnt];
                     lennyBoxes[cnt].Parent = lennySplitters[0, cnt].Panel1;
                     lennyBoxes[cnt].Dock = DockStyle.Top;
@@ -138,7 +144,18 @@ namespace LennyTool_2
                 // reloading of the texts
                 for(int cnt = 0; cnt < lennyPerPage; cnt++)
                 {
-                    lennyBoxes[cnt].Text = lennyStrings[cnt * currentPage];
+                    if( (currentPage-1) * lennyPerPage + cnt < lennyCount)
+                    {
+                        lennyBoxes[cnt].Enabled = true;
+                        lennyButtons[cnt].Enabled = true;
+                        lennyBoxes[cnt].Text = lennyStrings[(currentPage - 1) * lennyPerPage + cnt];
+                    } else
+                    {
+                        lennyBoxes[cnt].Enabled = false;
+                        lennyButtons[cnt].Enabled = false;
+                        lennyBoxes[cnt].Text = "";
+                    }
+                    
                 }
             }
             return;
